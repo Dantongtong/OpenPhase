@@ -1,0 +1,134 @@
+/* src/components/OpenProteinModules.css */
+.opm-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 24px 20px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu,
+      "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+    background: transparent;
+  }
+  
+  .opm-hero {
+    padding: 8px 0 12px;
+  }
+  
+  .opm-h2 {
+    font-size: 28px;
+    font-weight: 700;
+    margin: 24px 0 12px;
+  }
+  
+  .opm-subtitle {
+    color: #555;
+    line-height: 1.6;
+    margin: 0 0 16px 0;
+    font-weight: 500;
+  }
+  
+  .opm-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 16px;
+  }
+  
+  .opm-card {
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 16px;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04),
+      0 2px 6px rgba(0, 0, 0, 0.04), inset 0 0 0 1px rgba(255, 255, 255, 0.4);
+  }
+  
+  .opm-card-title {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 700;
+    color: #111827;
+  }
+  
+  .opm-card-desc {
+    margin: 0;
+    color: #444;
+    line-height: 1.6;
+  }
+  
+  .opm-imgbox {
+    width: 100%;
+    height: 150px;
+    border-radius: 10px;
+    border: 1px dashed #d1d5db;
+    background: repeating-conic-gradient(
+        from 0deg,
+        #fafafa 0% 25%,
+        #f4f4f5 0% 50%
+      )
+      50% / 20px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    color: #666;
+    overflow: hidden;
+  }
+  
+  .opm-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  
+  .opm-img-placeholder {
+    opacity: 0.9;
+  }
+  
+  .opm-linkrow {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  
+  .opm-chip {
+    font-size: 13px;
+    padding: 6px 10px;
+    border-radius: 999px;
+    border: 1px solid #e5e7eb;
+    background: #f9fafb;
+    text-decoration: none;
+    color: #111827;
+    transition: transform 0.06s ease, background 0.15s ease, border 0.15s ease;
+  }
+  .opm-chip:hover {
+    transform: translateY(-1px);
+    background: #f3f4f6;
+    border-color: #d1d5db;
+  }
+  
+  .opm-list {
+    margin: 4px 0 0 18px;
+    padding: 0;
+  }
+  
+  .opm-li {
+    line-height: 1.6;
+  }
+  
+  .opm-solution-head {
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+  }
+  
+  .opm-learnmore {
+    font-size: 13px;
+    text-decoration: underline;
+    color: #1f2937;
+  }
+  .opm-learnmore:hover {
+    text-decoration: none;
+  }
+  
