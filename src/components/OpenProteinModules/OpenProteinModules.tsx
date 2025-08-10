@@ -1,6 +1,7 @@
 // src/components/OpenProteinModules.tsx
 import React from "react";
 import "./OpenProteinModules.css";
+import useBaseUrl from "@docusaurus/useBaseUrl";
 
 type LinkItem = { label: string; href: string };
 type Feature = {
@@ -27,27 +28,27 @@ const defaultFeatures: Feature[] = [
   {
     title: "Tasks Overview",
     links: [
-      { label: "Content", href: "/docs/phase-system" },
+      { label: "Content", href: "/OpenPhase/docs/phase-system" },
       { label: "Python API tools", href: "#" },
-      { label: "Protein Model", href: "/docs/model" },
+      { label: "Protein Model", href: "/OpenPhase/docs/model" },
     ],
     image: "/img/phase_system_protein(1).png",
   },
   {
     title: "Dataset Splitting",
     links: [
-      { label: "Content", href: "/docs/dataset" },
+      { label: "Content", href: "/OpenPhase/docs/dataset" },
       { label: "Python API tools", href: "#" },
-      { label: "Protein Model", href: "/docs/model" },
+      { label: "Protein Model", href: "/OpenPhase/docs/model" },
     ],
     image: "/img/phase_system_protein(2).png",
   },
   {
     title: "Experiment System",
     links: [
-      { label: "Content", href: "/docs/experimental-conditions" },
+      { label: "Content", href: "/OpenPhase/docs/experimental-conditions" },
       { label: "Python API tools", href: "#" },      
-      { label: "Protein Model", href: "/docs/model" },
+      { label: "Protein Model", href: "/OpenPhase/docs/model" },
     ],
     image: "/img/phase_system_protein(3).png",
   },
@@ -103,7 +104,7 @@ export default function OpenProteinModules({
               {f.image ? (
                 // eslint-disable-next-line @next/next/no-img-element
                 <img
-                  src={f.image}
+                  src={useBaseUrl(f.image)}
                   alt={f.title}
                   className="opm-img"
                   loading="lazy"
